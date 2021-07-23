@@ -45,4 +45,9 @@ We will use HTML and CSS for our project.
 
 
 ### For more advanced students
+Build this web page with Flexbox:
+
+<img src="/challenge_image.png" width="600"  />
+
+You can use any picture you like. The pictures you see in the image are found searching for images of boxes on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
 
