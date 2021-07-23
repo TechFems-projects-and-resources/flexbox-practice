@@ -1,0 +1,21 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #cacaca;
+  padding: 10px;
+  margin: 50px;
+}
+
+.item {
+  background-color: red;
+  color: white;
+  font-size: 35px;
+  margin: 10px;
+}
