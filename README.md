@@ -74,9 +74,16 @@ We use the previous code. In the CSS for the container, set `flex-direction: row
 1. The `order` property is used to change the position of flex items in the container.
 1. To test this, we are going to create selectors for all flex items and change their order.
 1. Comment out the `.items-3` and `.items-4` code in your CSS, and add the selectors `.item-1`, `.item-2`, `.item-3`, `.item-4`, `.item-5`.
-1. The initial order is set to zero: `order: 0`. We can set the order property for each item and change their position that way. Try to move the items around: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
+1. The initial order is set to zero: `order: 0`. This is important: we start to count from index 0.
+1. We can set the order property for each item and change their position that way. Try to move the items around: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
 1. The order of the item numbers in the row should now be 3 - 4 - 5 - 1 - 2. Try some variations, moving the items around in the row. Make sure you get back to the 3 - 4 - 5 - 1 - 2 order.
-1. 
+
+**Flex-grow**  
+1. First remove all the `order` properties from the five flex items.
+1. The `flex-grow` property enables an item to grow. We can specify an integer, just like with the `order` property.
+1. We will use this in the `.item` selector: add to the CSS for this selector `flex-grow: 1;`. You will see that all five items have become bigger. They are occupying the **maximum space** available inside the container. If you comment out the `margin: 10px;` again, you will see this better (don't forget to uncomment it again).
+1. You can change the value to for example 100, but the result will be the same because the value only matters in relation to the rest.
+1. Test how the value matters: add `flex-grow: 3;` to item-4. You will see that item-4 becomes three times bigger than the other items. This means the flex-grow property works relatively. **Important:** because this is also relative to the space, the sizes will change when the window changes. Try resizing your browser window and see what happens, to understand this.
 
 
 
