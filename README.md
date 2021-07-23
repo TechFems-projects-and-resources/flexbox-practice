@@ -1,6 +1,7 @@
 ## Flexbox practice
 
-**Starter code**
+**Starter code**  
+
 <img src="/starter_code.png" width="400"  />
 
 
