@@ -1,7 +1,9 @@
 ## Flexbox practice
 
-<img src="/starter_code.png" width="400"  />  
 **Starter code**
+<img src="/starter_code.png" width="400"  />
+
+
 
 ### The goal of this project is to practice working with Flexbox in CSS
 
