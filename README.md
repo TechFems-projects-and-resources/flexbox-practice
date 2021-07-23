@@ -1,6 +1,6 @@
 ## Flexbox practice
 
-**Starter code**  
+**Starter code screenshot:**  
 
 <img src="/starter_code.png" width="400"  />
 
@@ -61,14 +61,29 @@ We will use HTML and CSS for our project.
 
 #### Child properties
 
-1. We use the previous code. In the CSS for the container, set `flex-direction: row`, remove the height and set `justify-content:center` and `align-items: center`.
+We use the previous code. In the CSS for the container, set `flex-direction: row`, remove the height and set `justify-content:center` and `align-items: center`.
+
+**Align self**  
+1. The `align-self` property is similar to the `align-items` property. But instead of collectively aligning items, the `align-self` will align one flex item along the cross axis. **Important**: it can overrule the `align-items` property that is set in the parent element.
+1. To try this out, use the item 3 selector and add a height of 150 pixels. This item 3 will be your reference point (more on this later).
+1. Apply `align-self` to item 4: use the item 4 selector and add the `align-self` property and set this to `flex-start`. Try out `flex-end` as well.
+1. Now set the value to `stretch`. You will see that item 4 stretches to the same size as item 3 (that is why it is the reference point).
+1. Test out what happens if you use `align-self: space-between` and other values such as center, space-around, etc.
+
+**Order of items**  
+1. The `order` property is used to change the position of flex items in the container.
+1. To test this, we are going to create selectors for all flex items and change their order.
+1. Comment out the `.items-3` and `.items-4` code in your CSS, and add the selectors `.item-1`, `.item-2`, `.item-3`, `.item-4`, `.item-5`.
+1. The initial order is set to zero: `order: 0`. We can set the order property for each item and change their position that way. Try to move the items around: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
+1. The order of the item numbers in the row should now be 3 - 4 - 5 - 1 - 2. Try some variations, moving the items around in the row. Make sure you get back to the 3 - 4 - 5 - 1 - 2 order.
 1. 
+
 
 
 --- 
 
 ### For more advanced students
-Build this web page with Flexbox:
+**Build this web page with Flexbox:**
 
 <img src="/challenge_image.png" width="700"  />
 
