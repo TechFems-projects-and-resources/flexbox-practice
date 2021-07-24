@@ -2,33 +2,35 @@
 
 **Starter code screenshot:**  
 
-<img src="/starter_code.png" width="400"  />
+<img src="/starter_code.png" width="500"  />
 
 
 ### The goal of this project is to practice working with Flexbox in CSS
 
 We will use HTML and CSS for our project.
 
-**Basic functionality:** we want to practice using Flexbox with the basic starter code in this repo.
+**Basic functionality:** we want to practice using Flexbox with the basic starter code in this repo. The instructions are very long this time, because the README contains both explanations and exercises. Feel free to do just one of the sections.
 
 ### For starters
 
-1. Create a new folder on your local computer with the name: flexbox-practice.
-1. Clone this repository to get the two files with starter code. You can also create an index.html file a style.css file and copy the starter code manually into these files, if you prefer.
-1. Run the code with LiveServer, you should see the image above
-1. To use Flexbox, you have to add the display property `flex` to the container. The container is the **parent** of the five items (those five are the children elements).
+1. Create a new folder on your local computer with the name **flexbox-practice**.
+1. Clone this repository into this folder, to get the two files with starter code. You can also create an index.html file a style.css file yourself, and copy the starter code manually into these files.
+1. Run the code with LiveServer, and then you should see the image above
+1. To use Flexbox, you have to add the display property `flex` to the container element from the HTML. The container is the **parent** of the five numbered items (those five are the children, or child elements).
 1. The first part of this exercise is about the parent properties: flex-direction, align-items and justify-content.
-1. Don't forget that the **content** of a container determines its size unless you set the size!
+1. Don't forget that the **content** of a container determines its size unless you set the size. This can cause surprises sometimes.
+
+---
 
 ### Parent properties
 
 **Flex-direction**  
-1. The `flex-direction` property is used to set the horizontal or vertical direction of the items. **Default** direction is `row`. If you add `flex-direction: row` to the CSS code for the container, you will see nothing happens because it is the default.
+1. The `flex-direction` property is used to set the horizontal or vertical direction of the items. **Default** direction is `row` (horizontal direction). If you add `flex-direction: row` to the CSS code for the container, you will see that nothing happens because it is the default.
 1. Change the flex-direction to `column` and you will see the items are arranged vertically, in a column. This means you change the **axis** for alignment of items from horizontal (= main axis) to vertical (= cross-axis).
 1. If you design an app for a small screen, using `column` will make all items stack on top of each other.
-1. Remember: 
-  1. when the flex-direction is set to row (= default), the main axis is the horizontal axis (also called x axis).
-  1. when the flex-direction is set to column, the main axis is the vertical axis (also called y axis).
+1. This concept of flex-direction is really important, so remember: 
+    1. when the flex-direction is set to row (= default), the main axis is the horizontal axis (also called x axis).
+    1. when the flex-direction is set to column, the main axis is the vertical axis (also called y axis).
 1. You can reverse the sequence of the items in the container: try this by adding `row-reverse` (x axis changes from left to right into right to left and items are put in reverse order) or `column-reverse` (y axis changes from bottom to top instead of top to bottom).
 
 **Justify-content**  
