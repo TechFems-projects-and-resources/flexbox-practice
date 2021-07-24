@@ -7,13 +7,13 @@
 .container {
   background-color: #cacaca;
   padding: 10px;
-  margin: 50px;
+  margin: 50px 20px;
 }
 
 .item {
   background-color: red;
   color: white;
   font-size: 35px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
 }

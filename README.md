@@ -18,6 +18,7 @@ We will use HTML and CSS for our project.
 1. Run the code with LiveServer, you should see the image above
 1. To use Flexbox, you have to add the display property `flex` to the container. The container is the **parent** of the five items (those five are the children elements).
 1. The first part of this exercise is about the parent properties: flex-direction, align-items and justify-content.
+1. Don't forget that the **content** of a container determines its size unless you set the size!
 
 ### Parent properties
 
@@ -86,20 +87,40 @@ We use the previous code. In the CSS for the container, set `flex-direction: row
 1. Test how the value matters: add `flex-grow: 3;` to item-4. You will see that item-4 becomes three times bigger than the other items. This means the flex-grow property works relatively. **Important:** because this is also relative to the space, the sizes will change when the window changes. Try resizing your browser window and see what happens, to understand this.
 
 **Flex shorthand property: `flex-grow`, `flex-basis`, `flex-shrink`**  
-1. By default, when we use `display: flex` in the parent container, we these three properties have values: `flex-grow: 0;` `flex-shrink: 1;` `flex-basis: auto;`. This means that  have to consider if we need to override these defaults that the child items receive.
-1. Remove the flex-grow property from item-4 to practice `flex` as shorthand.
-1. The `flex` property is shorthand to set several flex properties at once. With the `flex` keyword, we can set three different properties: the `flex-grow`, the `flex-basis` and the `flex-shrink` properties. The syntax is `flex:` `flex-grow` value `flex-shrink` value `flex-basis` value. Exampe: `flex: 1 1 150px;` 
+1. By default, when we use `display: flex` in the parent container, we these three properties have values: `flex-grow: 0;` `flex-shrink: 1;` `flex-basis: auto;`. This means that we have to consider if we need to override these defaults that the child items receive.
+1. The `flex` property is a shorthand to set three flex properties at once: the `flex-grow`, `flex-basis` and `flex-shrink` properties. The syntax is `flex: [flex-grow] [flex-shrink] [flex-basis]`. For exampe: `flex: 1 1 150px;` 
 1. If you use `flex` with just one value, you automatically declare the flex-grow value.
-
 1. **flex-basis:** the `flex-basis` can be used instead of the `width` property. It can be used with a percentage-based value or a pixel-based value.
 1. Test this by adding `flex-basis: 75%;` to the CSS for `.item-5`.
 1. **flex-shrink:** the `flex-shrink` property prevents shrinking of items when reducing the device viewport (screen width).
-1. To see this, change the `flex-basis` value for `.item-5` to 700 pixels and slowly make the computer window smaller. You will see that `.item-5` will start shrinking at a certain moment, even though we have set the value to 700px.
+1. To see this, first emove the flex-grow property from item-4 to practice `flex` as shorthand property.
+1. Now change the `flex-basis` value for `.item-5` to 700 pixels and slowly make the computer window smaller. You will see that `.item-5` will start shrinking at a certain moment, even though we have set the value to 700px.
 1. When we declare the `flex-shrink` property with a value of zero, this shrinking is prevented.
 1. The `flex-shrink` property accepts only binary values: one or zero. By default, it is set to 1 and that means the flex item will shrink at a certain point.
 1. Test this by setting the `flex-shrink` property to 0 and see what happens when you increase and decrease the screen width.
-1. Now we see that `.item-5` is not shrinking. But it means that the items are overflowing the container. They are even overflowing the viewport. To solve this, use the `flex` property with values for `flex-grow`, `flex-basis` and `flex-shrink`.
+1. Now we see that `.item-5` is not shrinking. But it means that the items are overflowing the container.
+1. Each of these shorthand values impact the other and that’s why it is recommended to use this shorthand rather than setting these values independently of one another: you will be more aware of how they impact each other.
 
+**Confusing? Let's try another explanation:**  
+1. You can keep in the back of your mind: `flex: [max] [min] [ideal size];` because that is how the properties [flex-grow] [flex-shrink] [flex-basis] relate. Remember the default values: `flex: 0 1 auto;`
+2. Usually, we do not want an item to grow: `flex-grow: 0`. With `flex-grow: 1` we allow all the elements to take up an equal portion of the parent element.
+3. If you want one item to grow, you can use either one of these two methods:
+```css
+.child-three {
+  flex: 3 1 auto;
+}
+```
+or
+```css
+.child-three {
+  flex-grow: 3;
+}
+```
+4. The second value in `flex: 0 1 auto;` is for `flex-shrink`. This tells the browser what the minimum size of an element should be. The default value is 1 which means the element will take up the same amount of space always.
+5. If we set this second value to 0, the element will not shrink at all. 
+6. The third value is for `flex-basis`. This is used to set an element to an ideal size. By default, it’s set to auto which means: use full height or width of the contents.
+7. To make all the elements take up the **full** space of the parent, we can set the child elements to `width: 100%`, or we can set `flex-basis: 100%`, or we can set `flex-grow to 1`.
+8. If we set a value instead of using `auto`, we want the item to take up that space. It will not always be possible, and if there is not enough space the element will take up that much space proportionally to the other elements. 
 
 --- 
 
