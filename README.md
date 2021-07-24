@@ -135,7 +135,8 @@ or
 1. Add CSS for `.item-10` and set flex to 1. You will see that now item-10 is taking up its maximum space in the line. To see more clearly what is happening, change the padding of `.item` to `padding: 30px;`. Now resize the browser window. You will see that the flex wrap property will automatically wrap the flex items more and more, to ensure the items fit into the container. For this, items are moved to new rows.
 1. You probably see that this can be very useful for responsive design, when there is less space in the screen.
 1. Let's test something else. Increase the height of the container, and set it to 600px. You will see that when you make the screen bigger than mobile size, big gaps come up between the rows. Try solving this.
-1. Did you manage to fix the issue? We need align-content for that, as you probably found out.
+1. Did you manage to fix the issue? We need `align-content: flex-start` for that, as you probably found out. The align-content property aligns the rows on the cross axis (the y axis), and with flex-start the alignment is at the top of the container.
+1. Now try out yourself: test the `align-items`, `align-self` and `align-content` with different values and see how these work with the flex-wrap.
 
 
 
