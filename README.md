@@ -7,7 +7,7 @@
 
 ### The goal of this project is to practice working with Flexbox in CSS
 
-We will use HTML and CSS for our project.
+We will use HTML and CSS for our project. After doing the project, have a look at [the best website to test Flexbox](https://flexbox.help/). **Save it in your favourites!**
 
 **Basic functionality:** we want to practice using Flexbox with the basic starter code in this repo. The instructions are very long this time, because the README contains both explanations and exercises. Feel free to do just one of the sections.
 
@@ -31,14 +31,14 @@ We will use HTML and CSS for our project.
 1. This concept of flex-direction is really important, so remember: 
     1. when the flex-direction is set to row (= default), the main axis is the horizontal axis (also called x axis).
     1. when the flex-direction is set to column, the main axis is the vertical axis (also called y axis).
-1. You can reverse the sequence of the items in the container: try this by adding `row-reverse` (x axis changes from left to right into right to left and items are put in reverse order) or `column-reverse` (y axis changes from bottom to top instead of top to bottom).
+1. You can reverse the sequence of the items in the container: try this by adding `row-reverse` (the x axis changes from left to right into right to left, and the items are put in reverse order) or `column-reverse` (the y axis changes from bottom to top instead of top to bottom).
 
 **Justify-content**  
 1. The `justify-content` property defines how the flex items are stacked along the main axis.
 1. Set the flex-direction back to row, and add `justify-content: center` to the CSS for the container. You will see that the items are stacked in the center of the window.
-1. The value `center` does not define the space between the items: this is defined by the margin we have set in the `item` selector. You can check this: comment out `margin: 10px;` in the CSS for `.item` and you will see the items are packed together (still centered).
-1. Make sure you have uncommented `margin: 10px;` in the CSS for `.item` to continue.
-1. Next value is `space-between`. Add `justify-content: space-between` to the CSS for the container. You will see that now the space between the items is **evenly distributed** automatically. **Note:** this also adjusts to the size of the window - it is responsive.
+1. The value `center` does not define the space between the items: this is defined by the margin we have set in the `item` selector. You can check this: comment out `margin: 10px;` in the CSS for `.item` and you will see the items are packed together (and still centered).
+1. Make sure you have uncommented `margin: 10px;` in the CSS for `.item` before you continue.
+1. The next value is `space-between`. Add `justify-content: space-between` to the CSS for the container. You will see that now the space between the items is **evenly distributed** automatically. **Note:** this also adjusts to the size of the window - it is responsive.
 1. Now we will comment out `margin: 10px;` in the CSS for `.item` to show the effect of the next value: `space-around`. Add `justify-content: space-around` to the CSS for the container. You will see that the space between the items changes. It is no longer evenly distributed: Flexbox has now created an **equal amount of space on both the left and right side** of the flex items. The space between the items is twice the amount of the space that is on both the left and right side. Try resizing the browser window to see the effect.
 1. There is another value called `space-evenly`. When you use `justify-content: space-evenly`, the space is automatically divided between the items plus the left and right side of the window. This means all spaces are the same.
 1. Two more values for `justify-content` that are similar: the `flex-start` and `flex-end` values. Flex-start is the default value. Now uncomment the `margin: 10px;` in the CSS for `.item` so you can see the effect of `justify-content: flex-start`. Then change this to `flex-end` and see the difference.
@@ -47,7 +47,7 @@ We will use HTML and CSS for our project.
 **Align-items**  
 1. Just like `justify-content` aligns the items along the main axis, the `align-items` property aligns the items along the cross axis (the y axis).
 1. Try this property out by making one of the items bigger than the rest by using the selector `.items-3` in your CSS and adding `height: 150px;` to this. Also set `justify-content` for the container back to `center`.
-1. You will see that all items now have a height of 150 pixels, not just item 3. This happens because the default value is **stretch**. When `align-items` has the default value, the element will stretch to cover from top to bottom.
+1. You will see that all items now have a height of 150 pixels, not just item 3. This happens because the default value for `align-items` is **stretch**. When `align-items` has the default value, the flex elements will stretch to cover from top to bottom.
 1. Now add `align-items: center` to the CSS for the container. You will now see the difference in height between the items. Because `align-items: center` centers the items across the cross axis, the larger item is centered in perfect alignment with the height of the container.
 1. Change the value to `flex-start` and `flex-end`, and see what happens.
 1. When `align-items` is used with the `stretch` value, all flex items will match the height of the tallest item. Try this out.
@@ -69,17 +69,17 @@ We will use HTML and CSS for our project.
 We use the previous code. In the CSS for the container, set `flex-direction: row`, remove the height and set `justify-content:center` and `align-items: center`.
 
 **Align self**  
-1. The `align-self` property is similar to the `align-items` property. But instead of collectively aligning items, the `align-self` will align one flex item along the cross axis. **Important**: it can overrule the `align-items` property that is set in the parent element.
-1. To try this out, use the item 3 selector and add a height of 150 pixels. This item 3 will be your reference point (more on this later).
-1. Apply `align-self` to item 4: use the item 4 selector and add the `align-self` property and set this to `flex-start`. Try out `flex-end` as well.
+1. The `align-self` property is similar to the `align-items` property. But instead of collectively aligning items, the `align-self` will align only one flex item along the cross axis. **Important**: `align-self` can overrule the `align-items` property that is set in the parent element.
+1. To try this out, use the `.item-3` selector and add a height of 150 pixels. This item 3 will be your reference point (more on this later).
+1. Apply `align-self` to item 4: use the `.item-4` selector and add the `align-self` property and set this to `flex-start`. Try out `flex-end` as well.
 1. Now set the value to `stretch`. You will see that item 4 stretches to the same size as item 3 (that is why it is the reference point).
-1. Test out what happens if you use `align-self: space-between` and other values such as center, space-around, etc.
+1. Test out what happens if you use `align-self: space-between` and other values such as `center`, `space-around`, etc.
 
 **Order of items**  
 1. The `order` property is used to change the position of flex items in the container.
 1. To test this, we are going to create selectors for all flex items and change their order.
-1. Comment out the `.items-3` and `.items-4` code in your CSS, and add the selectors `.item-1`, `.item-2`, `.item-3`, `.item-4`, `.item-5`.
-1. The initial order is set to zero: `order: 0`. This is important: we start to count from index 0.
+1. Add the selectors `.item-1`, `.item-2` and `.item-5`. Remove the code from selectors `.item-3` and `.item-4`. Now you should have selectors for item-1 to item-5.
+1. The initial order of the items is set to zero: `order: 0`. This is important: by defaut, we start to count from index 0.
 1. We can set the order property for each item and change their position that way. Try to move the items around: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
 1. The order of the item numbers in the row should now be 3 - 4 - 5 - 1 - 2. Try some variations, moving the items around in the row. Make sure you get back to the 3 - 4 - 5 - 1 - 2 order.
 
