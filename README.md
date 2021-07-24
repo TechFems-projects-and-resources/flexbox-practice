@@ -19,7 +19,7 @@ We will use HTML and CSS for our project.
 1. To use Flexbox, you have to add the display property `flex` to the container. The container is the **parent** of the five items (those five are the children elements).
 1. The first part of this exercise is about the parent properties: flex-direction, align-items and justify-content.
 
-#### Parent properties
+### Parent properties
 
 **Flex-direction**  
 1. The `flex-direction` property is used to set the horizontal or vertical direction of the items. **Default** direction is `row`. If you add `flex-direction: row` to the CSS code for the container, you will see nothing happens because it is the default.
@@ -59,7 +59,7 @@ We will use HTML and CSS for our project.
 1. To test the various justify-content values with `flex-direction: column`, first give the container a height of 1400 pixels.
 1. Now change the container CSS to `justify-content: space-between`. You will see that the space between the items has been distributed as before, but in the vertical direction.
 
-#### Child properties
+### Child properties
 
 We use the previous code. In the CSS for the container, set `flex-direction: row`, remove the height and set `justify-content:center` and `align-items: center`.
 
@@ -85,14 +85,28 @@ We use the previous code. In the CSS for the container, set `flex-direction: row
 1. You can change the value to for example 100, but the result will be the same because the value only matters in relation to the rest.
 1. Test how the value matters: add `flex-grow: 3;` to item-4. You will see that item-4 becomes three times bigger than the other items. This means the flex-grow property works relatively. **Important:** because this is also relative to the space, the sizes will change when the window changes. Try resizing your browser window and see what happens, to understand this.
 
+**Flex shorthand property: `flex-grow`, `flex-basis`, `flex-shrink`**  
+1. By default, when we use `display: flex` in the parent container, we these three properties have values: `flex-grow: 0;` `flex-shrink: 1;` `flex-basis: auto;`. This means that  have to consider if we need to override these defaults that the child items receive.
+1. Remove the flex-grow property from item-4 to practice `flex` as shorthand.
+1. The `flex` property is shorthand to set several flex properties at once. With the `flex` keyword, we can set three different properties: the `flex-grow`, the `flex-basis` and the `flex-shrink` properties. The syntax is `flex:` `flex-grow` value `flex-shrink` value `flex-basis` value. Exampe: `flex: 1 1 150px;` 
+1. If you use `flex` with just one value, you automatically declare the flex-grow value.
+
+1. **flex-basis:** the `flex-basis` can be used instead of the `width` property. It can be used with a percentage-based value or a pixel-based value.
+1. Test this by adding `flex-basis: 75%;` to the CSS for `.item-5`.
+1. **flex-shrink:** the `flex-shrink` property prevents shrinking of items when reducing the device viewport (screen width).
+1. To see this, change the `flex-basis` value for `.item-5` to 700 pixels and slowly make the computer window smaller. You will see that `.item-5` will start shrinking at a certain moment, even though we have set the value to 700px.
+1. When we declare the `flex-shrink` property with a value of zero, this shrinking is prevented.
+1. The `flex-shrink` property accepts only binary values: one or zero. By default, it is set to 1 and that means the flex item will shrink at a certain point.
+1. Test this by setting the `flex-shrink` property to 0 and see what happens when you increase and decrease the screen width.
+1. Now we see that `.item-5` is not shrinking. But it means that the items are overflowing the container. They are even overflowing the viewport. To solve this, use the `flex` property with values for `flex-grow`, `flex-basis` and `flex-shrink`.
 
 
 --- 
 
 ### For more advanced students
-**Build this web page with Flexbox:**
+**Build this webpage with Flexbox:**
 
 <img src="/challenge_image.png" width="700"  />
 
-You can use any picture you like. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
+You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
 
