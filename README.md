@@ -69,19 +69,19 @@ We will use HTML and CSS for our project. After doing the project, have a look a
 
 We use the previous code. In the CSS for the container, set `flex-direction: row`, remove the height and set `justify-content:center` and `align-items: center`.
 
-**Align self**  
+**Align-self**  
 1. The `align-self` property is similar to the `align-items` property. But instead of collectively aligning items, the `align-self` will align only one flex item along the cross axis. **Important**: `align-self` can overrule the `align-items` property that is set in the parent element.
 1. To try this out, use the `.item-3` selector and add a height of 150 pixels. This item 3 will be your reference point (more on this later).
 1. Apply `align-self` to item 4: use the `.item-4` selector and add the `align-self` property and set this to `flex-start`. Try out `flex-end` as well.
 1. Now set the value to `stretch`. You will see that item 4 stretches to the same size as item 3 (that is why it is the reference point).
 1. Test out what happens if you use `align-self: space-between` and other values such as `center`, `space-around`, etc.
 
-**Order of items**  
+**Order**  
 1. The `order` property is used to change the position of flex items in a parent container.
 1. To test this, we are going to create selectors for all flex items and change their order.
 1. Add the selectors `.item-1`, `.item-2` and `.item-5`. Remove the code from selectors `.item-3` and `.item-4`. Now you should have selectors for item-1 to item-5.
 1. The initial order of the items is set to zero: `order: 0`. This is important: by defaut, we start to count from index 0.
-1. We can set the order property for each item and change their position that way. Try to move the items around: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
+1. We can set the order property for each item and change their position. Now change the order: move item-1 to position 3, item-2 to position 4, item-3 to position 0, item-4 to position 1 and item-5 to position 2.
 1. The order of the item numbers in the row is now 3 - 4 - 5 - 1 - 2. Try moving the items in different ways.
 
 **Flex-grow**  
@@ -148,7 +148,9 @@ or
 ### For more advanced students
 **Build this webpage with Flexbox:**
 
-<img src="/challenge_image.png" width="800"  />
+<img src="/challenge_image.png" width="800"  />  
+
 
 You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
 
+---
