@@ -13,8 +13,7 @@ We will use HTML and CSS for our project. After doing the project, have a look a
 
 ### For starters
 
-1. Create a new folder on your local computer with the name **flexbox-practice**.
-1. Clone this repository into this folder, to get the two files with starter code. You can also create an index.html file a style.css file yourself, and copy the starter code manually into these files.
+1. Clone this repository onto your local computer, to get the two files with starter code. You can also create an index.html file a style.css file yourself, and copy the starter code manually into these files.
 1. Run the code with LiveServer, and then you should see the image above
 1. To use Flexbox, you have to add the property `display: flex` to the container element from the HTML. The container is the **parent** of the five numbered items (those five are the children, or child elements).
 1. The five child elements have a group class (`item`) and in addition a specific class (`item-1`, `item-2`, etc.). With class `item` we can set properties for the group of five items, and with the other class name we can set properties for one specific item.
