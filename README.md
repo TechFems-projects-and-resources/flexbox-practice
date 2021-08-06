@@ -7,7 +7,7 @@
 
 ### The goal of this project is to practice working with Flexbox in CSS
 
-We will use HTML and CSS for our project. After doing the project, have a look at [the best website to test Flexbox](https://flexbox.help/). **Save it in your favourites!**
+We will use HTML and CSS for our project. After doing the project, have a look at [the best website to test Flexbox](https://flexbox.help/). **Save it in your favourites!**  Also, we have added cheat sheets on how parent and child containers work (see folder cheat-sheets).
 
 **Basic functionality:** we want to practice using Flexbox with the basic starter code in this repo. The instructions are very long this time, because the README contains both explanations and exercises. Feel free to do just one of the sections.
 
