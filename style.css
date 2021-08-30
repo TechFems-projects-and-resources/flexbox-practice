@@ -24,21 +24,21 @@ img{
   flex-wrap: wrap;
   /*align-items: center;*/
   align-content: center;
- 
   height: 100vh;
+  background-color: lightgrey;
  
 }
-img{
-  border-radius: 18px;
- 
-}
+
 .flex-item {
   flex: 1 0 auto;
-  padding: 10px;
+  padding: 5px;
   width: 250px;
   /*align-self: baseline;*/
  
 }
+img {
+  object-fit: cover;
+} 
 
 .flex-item:nth-child(2){
   height:120px;
