@@ -7,7 +7,7 @@
 
 ### The goal of this project is to practice working with Flexbox in CSS
 
-We will use HTML and CSS for our project. After doing the project, have a look at [the best website to test Flexbox](https://flexbox.help/). **Save it in your favourites!**
+We will use HTML and CSS for our project. After doing the project, have a look at [the best website to test Flexbox](https://flexbox.help/). **Save it in your favourites!**  Also, we have added cheat sheets on how parent and child containers work (see folder cheat-sheets).
 
 **Basic functionality:** we want to practice using Flexbox with the basic starter code in this repo. The instructions are very long this time, because the README contains both explanations and exercises. Feel free to do just one of the sections.
 
@@ -150,6 +150,6 @@ or
 <img src="/challenge_image.png" width="800"  />  
 
 
-You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
+You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free). If you do not want to search for pictures, you can use the photos that are in the `assets` folder in this repository.
 
 ---
