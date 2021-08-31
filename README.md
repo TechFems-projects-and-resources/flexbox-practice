@@ -147,9 +147,10 @@ or
 ### For more advanced students
 **Build this webpage with Flexbox:**
 
-<img src="/challenge_image.png" width="800"  />  
+<img src="challenge_img.png" width="500"  />  
 
+You have to create your own HTML and CSS files because the files in this repository can only be used with the exercises above.
 
-You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. The pictures you see in the image above, are found when using the searchterm 'box' on Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free). If you do not want to search for pictures, you can use the photos that are in the `assets` folder in this repository.
+The pictures used in the example webpage are in the `assets` folder. You can use any pictures and images you like, but you have to stick to the layout of the page as seen in the example, using Flexbox. A good website for photographs and images is Pexels. [This is the website](https://www.pexels.com/search/box/) (some photos may not be for free, so look for the ones you can use for free).
 
 ---
