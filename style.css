@@ -1,60 +1,116 @@
-  
 * {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
-/*
-.container-main{
-  
-  width: 100%;
-  column-count: 5;
-  column-gap: 15px;
-  padding: 15px;
+
+body {
+  width: 100vw;
+  height: auto;
 }
-img{
-  margin-bottom: 15px;
-  border-radius: 10px;
-  width: 200px;
-}
-*/
+
 .container-main {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  /*align-items: center;*/
-  align-content: center;
- background:linear-gradient(black,white);
-  height: 100vh;
- 
 }
-img{
-  
+
+img {
+  display: flex;
+  padding: 7px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
-.flex-item {
-  flex: 1 0 auto;
-  padding: 5px;
-  width: 250px;
-  /*align-self: baseline;*/
- 
+
+.flex-item:nth-child(1) {
+  display: flex;
+  flex-shrink: 0;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
 }
 
-.flex-item:nth-child(2){
-  height:120px;
+.first-box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
 
-.flex-item:nth-child(4){
-  height:150px;
+.first-box-item {
+  width: 100%;
 }
 
-.flex-item:nth-child(5){
-  height:230px;
+.flex-item:nth-child(3) {
+  display: flex;
+  width: 30%;
+  height: auto;
 }
 
-.flex-item:nth-child(8){
-  height:160px;
+.flex-item:nth-child(4) {
+  display: flex;
+  width: 45%;
 }
-.flex-item:last-child{
-  height:200px;
+
+.flex-item:nth-child(5) {
+  display: flex;
+  width: 55%;
+}
+
+.flex-item:nth-child(6) {
+  display: flex;
+  width: 100vw;
+  height: 300px;
+}
+
+.flex-item:nth-child(7) {
+  display: flex;
+  width: 60%;
+}
+
+.flex-item:nth-child(8) {
+  display: flex;
+  width: 35%;
+}
+
+.second-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.second-box .flex-item:nth-child(1) {
+  width: 60%;
+  height: auto;
+}
+
+.second-box .flex-item:nth-child(2) {
+  width: 60%;
+  height: auto;
+}
+
+.second-box .flex-item:nth-child(3) {
+  width: 100%;
+  height: auto;
+}
+
+.flex-item:nth-child(8) {
+  display: flex;
+  width: 35%;
+}
+
+.flex-item:nth-child(10) {
+  display: flex;
+  width: 65%;
+}
+
+.flex-item:nth-child(11) {
+  display: flex;
+  width: 65%;
+  height: auto;
+}
+
+.flex-item:last-child {
+  display: flex;
+  width: 35%;
 }
